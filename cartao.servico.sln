@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cartao.servico", "cartao.servico\cartao.servico.csproj", "{23FF49EE-0B22-44F8-8711-095809733451}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Core", "2-Core", "{27CB8475-DB18-4462-9F60-E3156A17A84D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cartao.Domain", "cartao.core.domain\Cartao.Domain.csproj", "{C49C8F12-E2C3-4C15-A1E5-E6476541CC57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Driving", "1-Driving", "{5012107A-EDD0-4D11-9469-187024EE746C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D02FC588-8943-4793-B330-D1072146306A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23FF49EE-0B22-44F8-8711-095809733451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23FF49EE-0B22-44F8-8711-095809733451}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23FF49EE-0B22-44F8-8711-095809733451}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23FF49EE-0B22-44F8-8711-095809733451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C49C8F12-E2C3-4C15-A1E5-E6476541CC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C49C8F12-E2C3-4C15-A1E5-E6476541CC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C49C8F12-E2C3-4C15-A1E5-E6476541CC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C49C8F12-E2C3-4C15-A1E5-E6476541CC57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D02FC588-8943-4793-B330-D1072146306A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D02FC588-8943-4793-B330-D1072146306A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D02FC588-8943-4793-B330-D1072146306A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D02FC588-8943-4793-B330-D1072146306A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{23FF49EE-0B22-44F8-8711-095809733451} = {5012107A-EDD0-4D11-9469-187024EE746C}
+		{C49C8F12-E2C3-4C15-A1E5-E6476541CC57} = {27CB8475-DB18-4462-9F60-E3156A17A84D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54D1A5EB-0D6F-426B-8BA6-7A6525A77097}
+	EndGlobalSection
+EndGlobal

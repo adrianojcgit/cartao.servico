@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  propostadb:
+    container_name: banco_mongodb_corban
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: macoratti
+      MONGO_INITDB_ROOT_PASSWORD: numsey
+    ports:
+      - "27018:27017"
+    volumes:
+      - mongo_propostadb_data:/data/db
+  #rabbitmq:
+  #  image: rabbitmq:3-management-alpine
+  #  container_name: rabbitmq
+  #  ports:
+  #    - 5672:5672
+  #    - 15672:15672
+  #  volumes:
+  #    - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+  #    - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq

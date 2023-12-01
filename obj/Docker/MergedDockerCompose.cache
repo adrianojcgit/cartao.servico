@@ -1,0 +1,21 @@
+name: dockercompose17192815335181889066
+services:
+  cartao.servico:
+    build:
+      context: C:\Adriano\Projetos\CartaoSemDocker\cartao.servico
+      dockerfile: cartao.servico/Dockerfile
+    environment:
+      DOTNET_ENVIRONMENT: Development
+    image: cartaoservico
+    networks:
+      default: null
+    volumes:
+      - type: bind
+        source: C:\Users\adria\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  default:
+    name: dockercompose17192815335181889066_default

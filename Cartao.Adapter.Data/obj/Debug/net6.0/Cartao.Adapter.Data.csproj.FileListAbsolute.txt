@@ -1,0 +1,12 @@
+C:\Adriano\Projetos\Cartao\cartao.servico\Cartao.Adapter.Data\bin\Debug\net6.0\Cartao.Adapter.Data.deps.json
+C:\Adriano\Projetos\Cartao\cartao.servico\Cartao.Adapter.Data\bin\Debug\net6.0\Cartao.Adapter.Data.dll
+C:\Adriano\Projetos\Cartao\cartao.servico\Cartao.Adapter.Data\bin\Debug\net6.0\Cartao.Adapter.Data.pdb
+C:\Adriano\Projetos\Cartao\cartao.servico\Cartao.Adapter.Data\obj\Debug\net6.0\Cartao.Adapter.Data.csproj.AssemblyReference.cache
+C:\Adriano\Projetos\Cartao\cartao.servico\Cartao.Adapter.Data\obj\Debug\net6.0\Cartao.Adapter.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Adriano\Projetos\Cartao\cartao.servico\Cartao.Adapter.Data\obj\Debug\net6.0\Cartao.Adapter.Data.AssemblyInfoInputs.cache
+C:\Adriano\Projetos\Cartao\cartao.servico\Cartao.Adapter.Data\obj\Debug\net6.0\Cartao.Adapter.Data.AssemblyInfo.cs
+C:\Adriano\Projetos\Cartao\cartao.servico\Cartao.Adapter.Data\obj\Debug\net6.0\Cartao.Adapter.Data.csproj.CoreCompileInputs.cache
+C:\Adriano\Projetos\Cartao\cartao.servico\Cartao.Adapter.Data\obj\Debug\net6.0\Cartao.Adapter.Data.dll
+C:\Adriano\Projetos\Cartao\cartao.servico\Cartao.Adapter.Data\obj\Debug\net6.0\refint\Cartao.Adapter.Data.dll
+C:\Adriano\Projetos\Cartao\cartao.servico\Cartao.Adapter.Data\obj\Debug\net6.0\Cartao.Adapter.Data.pdb
+C:\Adriano\Projetos\Cartao\cartao.servico\Cartao.Adapter.Data\obj\Debug\net6.0\ref\Cartao.Adapter.Data.dll
