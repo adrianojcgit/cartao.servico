@@ -1,10 +1,11 @@
 using Cartao.Domain.Domains.PropostaContext.Contract;
+using Cartao.Domain.Domains.PropostaContext.Repositories;
 using Cartao.Domain.Domains.PropostaContext.Services;
 using Cartao.Domain.Infra;
 using Microsoft.Extensions.Logging.Configuration;
 using Microsoft.Extensions.Logging.EventLog;
 using Microsoft.Extensions.Options;
-using Cartao.Domain.Domains.PropostaContext.Repositories;
+//using Cartao.Domain.Domains.PropostaContext.Repositories;
 
 internal class Program
 {
