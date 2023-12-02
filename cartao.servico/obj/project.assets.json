@@ -1153,6 +1153,19 @@
           "lib/net6.0/ZstdSharp.dll": {}
         }
       },
+      "Cartao.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Cartao.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cartao.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cartao.Data.dll": {}
+        }
+      },
       "Cartao.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2895,6 +2908,11 @@
         "zstdsharp.port.nuspec"
       ]
     },
+    "Cartao.Data/1.0.0": {
+      "type": "project",
+      "path": "../../Cartao.Data/Cartao.Data.csproj",
+      "msbuildProject": "../../Cartao.Data/Cartao.Data.csproj"
+    },
     "Cartao.Domain/1.0.0": {
       "type": "project",
       "path": "../cartao.core.domain/Cartao.Domain.csproj",
@@ -2903,6 +2921,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Cartao.Data >= 1.0.0",
       "Cartao.Domain >= 1.0.0",
       "EPPlus >= 7.0.0",
       "Microsoft.Extensions.Hosting >= 6.0.1",
@@ -2945,6 +2964,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Adriano\\Projetos\\Cartao\\Cartao.Data\\Cartao.Data.csproj": {
+              "projectPath": "C:\\Adriano\\Projetos\\Cartao\\Cartao.Data\\Cartao.Data.csproj"
+            },
             "C:\\Adriano\\Projetos\\Cartao\\cartao.servico\\cartao.core.domain\\Cartao.Domain.csproj": {
               "projectPath": "C:\\Adriano\\Projetos\\Cartao\\cartao.servico\\cartao.core.domain\\Cartao.Domain.csproj"
             }

@@ -154,3 +154,5 @@ C:\Adriano\Projetos\CartaoSemDocker\cartao.servico\cartao.servico\obj\Debug\net6
 C:\Adriano\Projetos\CartaoSemDocker\cartao.servico\cartao.servico\obj\Debug\net6.0\cartao.servico.pdb
 C:\Adriano\Projetos\CartaoSemDocker\cartao.servico\cartao.servico\obj\Debug\net6.0\cartao.servico.genruntimeconfig.cache
 C:\Adriano\Projetos\CartaoSemDocker\cartao.servico\cartao.servico\obj\Debug\net6.0\ref\cartao.servico.dll
+C:\Adriano\Projetos\Cartao\cartao.servico\cartao.servico\bin\Debug\net6.0\Cartao.Data.dll
+C:\Adriano\Projetos\Cartao\cartao.servico\cartao.servico\bin\Debug\net6.0\Cartao.Data.pdb
