@@ -1,1 +1,0 @@
-C:\Adriano\Projetos\CartaoSemDocker\cartao.servico\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
