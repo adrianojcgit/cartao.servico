@@ -4,11 +4,12 @@ namespace Cartao.Domain.Domains.PropostaContext.Contract
 {
     public interface IProposta
     {
+        void Adicionar(PropostaBaseDto propostaBase);
         //Task<List<ClienteDto>> GetAsync();
 
         //Task<ClienteDto?> GetAsync(string id);
 
-        Task CreateAsync(PropostaBaseDto newAluno);
+        //Task CreateAsync(PropostaBaseDto newAluno);
 
         //Task UpdateAsync(string id, ClienteDto updatedAluno);
 
