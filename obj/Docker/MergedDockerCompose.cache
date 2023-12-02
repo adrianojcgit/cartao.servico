@@ -1,21 +1,27 @@
-name: dockercompose17192815335181889066
+name: dockercompose1642925062998607865
 services:
-  cartao.servico:
-    build:
-      context: C:\Adriano\Projetos\CartaoSemDocker\cartao.servico
-      dockerfile: cartao.servico/Dockerfile
+  cartaoservicodb:
+    container_name: cartaoservicodb
     environment:
-      DOTNET_ENVIRONMENT: Development
-    image: cartaoservico
+      MONGO_INITDB_ROOT_PASSWORD: cartaopws
+      MONGO_INITDB_ROOT_USERNAME: cartaouser
+    image: mongo
     networks:
       default: null
+    ports:
+      - mode: ingress
+        target: 27017
+        published: "27020"
+        protocol: tcp
+    restart: always
     volumes:
-      - type: bind
-        source: C:\Users\adria\AppData\Roaming/Microsoft/UserSecrets
-        target: /root/.microsoft/usersecrets
-        read_only: true
-        bind:
-          create_host_path: true
+      - type: volume
+        source: mongo_propostadb_data
+        target: /data/db
+        volume: {}
 networks:
   default:
-    name: dockercompose17192815335181889066_default
+    name: dockercompose1642925062998607865_default
+volumes:
+  mongo_propostadb_data:
+    name: dockercompose1642925062998607865_mongo_propostadb_data

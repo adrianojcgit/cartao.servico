@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentacao", "Documentaca
 		..\..\Cartão.drawio = ..\..\Cartão.drawio
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-Data", "3-Data", "{1702EEAB-6FE1-4CBD-AEAC-552745D8DDFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cartao.Data", "..\Cartao.Data\Cartao.Data.csproj", "{BDC48AAF-7935-4BE9-B79E-31B376BDCD72}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +40,10 @@ Global
 		{D02FC588-8943-4793-B330-D1072146306A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D02FC588-8943-4793-B330-D1072146306A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D02FC588-8943-4793-B330-D1072146306A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDC48AAF-7935-4BE9-B79E-31B376BDCD72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC48AAF-7935-4BE9-B79E-31B376BDCD72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC48AAF-7935-4BE9-B79E-31B376BDCD72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC48AAF-7935-4BE9-B79E-31B376BDCD72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +51,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{23FF49EE-0B22-44F8-8711-095809733451} = {5012107A-EDD0-4D11-9469-187024EE746C}
 		{C49C8F12-E2C3-4C15-A1E5-E6476541CC57} = {27CB8475-DB18-4462-9F60-E3156A17A84D}
+		{BDC48AAF-7935-4BE9-B79E-31B376BDCD72} = {1702EEAB-6FE1-4CBD-AEAC-552745D8DDFC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {54D1A5EB-0D6F-426B-8BA6-7A6525A77097}
