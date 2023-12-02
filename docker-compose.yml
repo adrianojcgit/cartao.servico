@@ -1,8 +1,9 @@
 version: '3.4'
 
 services:
-  propostadb:
+  #propostadb:
+  #  image: mongo
+  cartaoservicodb:
     image: mongo
-
 volumes:
   mongo_propostadb_data:

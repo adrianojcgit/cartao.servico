@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Cartao.Data\Cartao.Data.csproj" />
     <ProjectReference Include="..\cartao.core.domain\Cartao.Domain.csproj" />
   </ItemGroup>
 </Project>
