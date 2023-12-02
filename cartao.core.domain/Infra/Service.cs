@@ -130,7 +130,14 @@ namespace Cartao.Domain.Infra
         {
             try
             {
-                var factorySQL = new ConnectionFactory() { HostName = "localhost" };
+                var factorySQL = new ConnectionFactory()
+                {
+                    HostName = "localhost",
+                    VirtualHost = "/",
+                    Port = AmqpTcpEndpoint.UseDefaultPort,
+                    UserName = "guest",
+                    Password = "guest"
+                };
                 var connection = factorySQL.CreateConnection();
                 var queueName = "proposta";
                 var channel1 = CreateChannel(connection);
