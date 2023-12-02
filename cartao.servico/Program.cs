@@ -3,6 +3,8 @@ using Cartao.Domain.Domains.PropostaContext.Services;
 using Cartao.Domain.Infra;
 using Microsoft.Extensions.Logging.Configuration;
 using Microsoft.Extensions.Logging.EventLog;
+using Microsoft.Extensions.Options;
+using Cartao.Domain.Domains.PropostaContext.Repositories;
 
 internal class Program
 {
@@ -13,15 +15,16 @@ internal class Program
          {
              options.ServiceName = "cartao.servico";
          })
-         .ConfigureServices(services =>
+         .ConfigureServices((context, services) =>
          {
              LoggerProviderOptions.RegisterProviderOptions<EventLogSettings, EventLogLoggerProvider>(services);
              services.AddSingleton<Proposta>();
              services.AddSingleton<IProposta, PropostaServices>();
              services.AddHostedService<Service>();
             //services.AddScoped<ICatalogContext, CatalogContext>();
-             //services.Configure<DatabaseSettings>(services.Configure);
-
+             services.Configure<DataBaseConfig>(context.Configuration.GetSection(nameof(DataBaseConfig)));
+             services.AddSingleton<IDataBaseConfig>(sp => sp.GetRequiredService<IOptions<DataBaseConfig>>().Value);
+             services.AddSingleton<IPropostaRepository, PropostaRepository>();
          })
          .ConfigureLogging((context, logging) =>
          {

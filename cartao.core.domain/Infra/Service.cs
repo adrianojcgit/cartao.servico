@@ -122,8 +122,8 @@ namespace Cartao.Domain.Infra
 
         private void GravarProposta(PropostaBaseDto item)
         {
-           _iproposta.CreateAsync(item);
-            
+           //_iproposta.CreateAsync(item);
+            _iproposta.Adicionar(item);
         }
 
         private static void PrepararCanalEnfileirar(PropostaBaseDto item)

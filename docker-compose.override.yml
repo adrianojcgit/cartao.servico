@@ -1,14 +1,24 @@
 version: '3.4'
 
 services:
-  propostadb:
-    container_name: banco_mongodb_corban
+  #propostadb:
+  #  container_name: banco_mongodb_corban
+  #  restart: always
+  #  environment:
+  #    MONGO_INITDB_ROOT_USERNAME: macoratti
+  #    MONGO_INITDB_ROOT_PASSWORD: numsey
+  #  ports:
+  #    - "27018:27017"
+    #volumes:
+    #  - mongo_propostadb_data:/data/db
+  cartaoservicodb:
+    container_name: cartaoservicodb
     restart: always
     environment:
-      MONGO_INITDB_ROOT_USERNAME: macoratti
-      MONGO_INITDB_ROOT_PASSWORD: numsey
+      MONGO_INITDB_ROOT_USERNAME: cartaouser
+      MONGO_INITDB_ROOT_PASSWORD: cartaopws
     ports:
-      - "27018:27017"
+      - "27020:27017"
     volumes:
       - mongo_propostadb_data:/data/db
   #rabbitmq:
