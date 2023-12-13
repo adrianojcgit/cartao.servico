@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Cartao.Domain.Domains.PropostaContext.Contract;
+using System;
 
 namespace Cartao.Domain.Infra
 {
@@ -156,12 +157,14 @@ namespace Cartao.Domain.Infra
 
         public static void AdicionarItemNaFila(IModel channel, string queueName, PropostaBaseDto item)
         {
+            int count = 0;
             Task.Run(() =>
             {
+                
                 channel.ConfirmSelect();
-                channel.BasicAcks += Channel_BasicAcks_MongoDb;
-                channel.BasicNacks += Channel_BasicNacks_MongoDb;
-                channel.BasicReturn += Channel_BasicReturn_MongoDb;
+                channel.BasicAcks += Channel_BasicAcks;
+                channel.BasicNacks += Channel_BasicNacks;
+                channel.BasicReturn += Channel_BasicReturn;
                 //fila dlq
                 channel.ExchangeDeclare("DeadLetterExchange", ExchangeType.Fanout);      // 1o. Declara o Exchange
                 channel.QueueDeclare("dlq_proposta", true, false, false, null);
@@ -181,9 +184,15 @@ namespace Cartao.Domain.Infra
                 properties.Persistent = true;
 
                 string message = JsonConvert.SerializeObject(item);
-                Console.WriteLine("Mensagem: " + message);
-                Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine("*********************************************************************************************************************");
+                Console.WriteLine($"Id: {item.Id} - Proposta: {item.Propostas[count].NumeroProposta} - Nome: {item.Propostas[count].NomeFantasia}");
+                
+                if (item.Propostas[count].NomeFantasia.Contains("*"))
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                else
+                    Console.ForegroundColor = ConsoleColor.Green;
+
+                count++;
+                //Console.WriteLine("*********************************************************************************************************************");
 
                 var body = Encoding.UTF8.GetBytes(message);
 
@@ -196,18 +205,21 @@ namespace Cartao.Domain.Infra
             });
         }
 
-        private static void Channel_BasicNacks_MongoDb(object sender, RabbitMQ.Client.Events.BasicNackEventArgs e)
+        private static void Channel_BasicNacks(object sender, RabbitMQ.Client.Events.BasicNackEventArgs e)
         {
-            Console.WriteLine($"{DateTime.Now:o} -> Basic Nack MongoDb");
+            // Console.WriteLine($"{DateTime.Now:o} -> Basic NACK MongoDb");
+            Console.ForegroundColor = ConsoleColor.Red;
         }
 
-        private static void Channel_BasicAcks_MongoDb(object sender, RabbitMQ.Client.Events.BasicAckEventArgs e)
+        private static void Channel_BasicAcks(object sender, RabbitMQ.Client.Events.BasicAckEventArgs e)
         {
-            Console.WriteLine($"{DateTime.Now:o} -> Basic Ack MongoDb");
+            //Console.WriteLine($"{DateTime.Now:o} -> Basic ACK MongoDb");
+            //Console.ForegroundColor = ConsoleColor.Green;
         }
 
-        private static void Channel_BasicReturn_MongoDb(object sender, RabbitMQ.Client.Events.BasicReturnEventArgs e)
+        private static void Channel_BasicReturn(object sender, RabbitMQ.Client.Events.BasicReturnEventArgs e)
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             //var message = Encoding.UTF8.GetString(e.Body.ToArray());
             //Console.ForegroundColor = ConsoleColor.Red;
             //Console.WriteLine($"{DateTime.Now:o} -> Basic Return -> {message} ");
