@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cartao.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7796cb20f531adcdea116e904e73db018987b789")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dee2d7d971c77077b7ea5cb417194afda01a5af")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cartao.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cartao.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
