@@ -22,3 +22,4 @@ C:\Adriano\Projetos\CartaoSemDocker\cartao.servico\cartao.core.domain\obj\Debug\
 C:\Adriano\Projetos\CartaoSemDocker\cartao.servico\cartao.core.domain\obj\Debug\net6.0\refint\Cartao.Domain.dll
 C:\Adriano\Projetos\CartaoSemDocker\cartao.servico\cartao.core.domain\obj\Debug\net6.0\Cartao.Domain.pdb
 C:\Adriano\Projetos\CartaoSemDocker\cartao.servico\cartao.core.domain\obj\Debug\net6.0\ref\Cartao.Domain.dll
+C:\Adriano\Projetos\Cartao\cartao.servico\cartao.core.domain\obj\Debug\net6.0\Cartao.Domain.sourcelink.json

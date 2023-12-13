@@ -7,8 +7,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Cartao.Domain.Domains.PropostaContext.Contract;
-using MongoDB.Driver;
-using System;
 
 namespace Cartao.Domain.Infra
 {
