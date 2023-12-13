@@ -22,7 +22,7 @@ namespace Cartao.Domain.Infra
         string targetPath = "";
         string sourceFile = "";
         string destFile = "";
-        //decimal fatMensal;
+        decimal fatMensal;
         string porteEmpresaFinal = "";
         public Service(
             Proposta clientes,
